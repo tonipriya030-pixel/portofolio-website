@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Priya Nakka</title>
+
+<style>
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+  background: #f5f7fa; /* light clean professional grey */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #222;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: #ffffff;
+  padding: 15px 40px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50; /* dark gray-blue */
+}
+
+/* ===== NAVIGATION ===== */
+nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #444;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav .Active {
+  color: #1e88e5; /* clean professional blue */
+  font-weight: 600;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+  max-width: 850px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+  text-align: center;
+}
+
+.about-section h1 {
+  font-size: 38px;
+  color: #1e88e5; /* blue title */
+  margin-bottom: 18px;
+}
+
+.about-section p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 18px;
+  line-height: 1.7;
+}
+
+/* ===== BUTTONS ===== */
+.social-links a {
+  display: inline-block;
+  margin: 12px;
+  padding: 12px 22px;
+  background: #1e88e5; /* button blue */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  background: #1565c0; /* darker blue */
+  transform: translateY(-3px);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto;
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.05);
+}
+
+footer p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  .about-section {
+    margin: 40px 15px;
+    padding: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PN</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="Active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="about-section">
+    <h1>Priya Nakka</h1>
+    <p>Hello! I'm Priya_nakka, a passionate web developer with a love for creating beautiful, clean, and functional websites.</p>
+    <p>I enjoy learning new technologies, building projects, and exploring creative ideas in the world of web development.</p>
+
+    <div class="social-links">
+        <a href="projects.html">View My Work</a>
+        <a href="contact.html">Get In Touch</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Priya_nakka. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+

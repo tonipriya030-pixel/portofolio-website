@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priya Portfolio</title>
+
+    <style>
+        /* ===== Global Styles ===== */
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #f0f8ff; /* soft light blue */
+            color: #333;
+        }
+
+        /* ===== Header / Navbar ===== */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 40px;
+            background: #1e90ff; /* bright professional blue */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        nav a {
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+            transition: 0.3s;
+        }
+
+        nav a:hover,
+        nav a.Active {
+            color: #ffeb3b; /* yellow highlight */
+        }
+
+        /* ===== Hero / About Section ===== */
+        .about-section {
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        .about-section h1 {
+            font-size: 60px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1e90ff; /* blue heading */
+        }
+
+        .about-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            color: #444;
+        }
+
+        /* ===== Blue Buttons ===== */
+        .about-section a {
+            display: inline-block;
+            padding: 12px 28px;
+            margin: 10px;
+            font-size: 18px;
+            text-decoration: none;
+            background: #1e90ff; /* professional blue */
+            color: white;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .about-section a:hover {
+            background: #156edc; /* darker blue hover */
+            transform: translateY(-4px);
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 10px;
+            }
+
+            .about-section h1 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">PN</div>
+        <nav>
+            <a href="index.html" class="Active">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>          
+        </nav>          
+    </header>
+
+    <section class="about-section">
+        <h1>Priya Nakka</h1>
+        <p>Hello! I'm Priya Nakka from Squad 146</p>
+
+        <a href="projects.html">View My Work</a>
+        <a href="contact.html">Get In Touch</a>
+    </section>
+
+</body>
+</html>

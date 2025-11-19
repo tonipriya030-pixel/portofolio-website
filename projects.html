@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Priya Nakka</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/script.js"></script>
+
+    <style>
+        /* ===== Overall Page Styling ===== */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f6ff; /* light blue background */
+            color: #003566;
+        }
+
+        /* ===== Header Styling ===== */
+        header {
+            background: #0077ff; /* blue header */
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+
+        nav a.Active,
+        nav a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        /* ===== Projects Section ===== */
+        .projects {
+            padding: 40px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .projects h1 {
+            text-align: center;
+            color: #005fcc; /* darker blue heading */
+            font-size: 32px;
+        }
+
+        .projects p {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 18px;
+            color: #003566;
+        }
+
+        /* ===== Project Cards ===== */
+        .project-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: 0.3s;
+            border-top: 4px solid #0077ff; /* blue border */
+        }
+
+        .project-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* ===== Buttons ===== */
+        .project-card .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 18px;
+            background: #0077ff; /* blue button */
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card .btn:hover {
+            background: #005fcc;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: #003566;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">PN</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="Active">Projects</a>
+            <a href="contact.html">Contact</a>          
+        </nav>          
+    </header>
+
+    <section class="projects">
+        <h1>My Projects</h1>
+        <p>Here are some of the projects I have created. Each project reflects my learning and creativity.</p>
+
+        <div class="project-list">
+
+            <div class="project-card">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fportfolio_10456439&psig=AOvVaw3xkYwckB4P2hPHj80MigEq&ust=1763615755403000&source=images&cd=vfe&opi=89978449&ved=0CBgQjhxqFwoTCMj0jue6_ZADFQAAAAAdAAAAABAE" alt="Portfolio Website">
+                <h2>Portfolio Website</h2>
+                <p>A clean, responsive portfolio website built using HTML, CSS, and JavaScript.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://cdn.vectorstock.com/i/1000v/65/76/weather-app-icon-isolated-vector-10286576.avif" alt="Weather App">
+                <h2>Weather App</h2>
+                <p>Shows real-time weather using API integration. Users can search any city.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.com%2Ficons%2Ftodo-list&psig=AOvVaw1ra08rYVVQd2R8eQxpr4kF&ust=1763615240868000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCMCu5LW5_ZADFQAAAAAdAAAAABAT" alt="To-Do App">
+                <h2>To-Do List App</h2>
+                <p>A simple and smooth task manager application that helps users stay organized.</p>
+                <a href="#" class="btn">View Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Priya_nakka. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+       
